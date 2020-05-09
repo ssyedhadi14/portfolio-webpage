@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Special+Elite&display=swap');
+{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(215, 218, 245); 
+    font-family: 'Special Elite', cursive;
+    margin: 0;
+}
+
+nav {
+    background-color:  rgb(226, 127, 13);
+    color: linen;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+
+}
+
+nav a {
+    color: linen;
+    margin-left: 20px;
+    text-decoration: navy;
+    text-decoration: underline;
+
+}
+
+header{
+    background-image: url('https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    color: blanchedalmond;
+    height: 100vh;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header::after{
+    content: '';
+    background-color:#000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+
+}
+
+header h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+header p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.bg-pinkish {
+
+    background-color: #A64253;
+    color: blanchedalmond;
+}
+
+
+footer{
+    background-color: rgb(226, 127, 13);
+    color: linen;
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+.social-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;  
+}
+
+.social-ul a {
+    border-radius: 50%;
+    border: 2px solid purple;
+    flex-wrap: wrap;
+    transition: transform 0.4s ease;
+    color: rgb(111, 74, 197);
+    font-size: 25px;
+    margin: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+.social-ul a:hover {
+    transform: scale(1.25);
+}
+
+.project-tile {
+    transition: transform 0.4s ease;
+    margin: 10px;
+    max-width: 300px;
+}
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile img {
+    max-width: 300px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    margin: 20px auto 0;    
+}
+
+.project-tile p {
+    font-size: 20px;
+    margin-top: 30px;
+    color: black;
+}
+
+@media only screen and (max-width: 440px) {
+    section {
+        padding: 20px;
+    }
+}
+
+
